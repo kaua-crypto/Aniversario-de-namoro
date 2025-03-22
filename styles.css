@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fc6f76;
+    /* Cor de fundo suave */
+    color: #333;
+    /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f83301, #910572);
+    /* Gradiente de fundo */
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: fadeIn 2s;
+    /* Animação de fade-in */
+}
+
+section {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagens img {
+    width: 200px;
+    /* Largura das imagens */
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    /* Efeito de transição */
+}
+
+.imagens img:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff0000;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca o canvas atrás do conteúdo */
+}
